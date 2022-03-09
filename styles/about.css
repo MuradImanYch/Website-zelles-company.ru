@@ -1,0 +1,120 @@
+* {
+    font-family: HelveticaNeueCyr;
+}
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: url('../assets/fonts/HelveticaNeueCyr-Light.ttf'),
+    url('../assets/fonts/HelveticaNeueCyr-Light.woff'),
+    url('../assets/fonts/HelveticaNeueCyr-Light.eot');
+}
+.font-HelveticaNeueCyr-ThinThin {
+    font-family: 'Helvetica Neue Cyr Thin';
+    src: url('../assets/fonts/Helvetica Neue Cyr Thin.ttf'),
+    url('../assets/fonts/Helvetica Neue Cyr Thin.woff'),
+    url('../assets/fonts/Helvetica Neue Cyr Thin.eot');
+}
+.header.about {
+	height: 150px;
+}
+.block_about_info {
+	display: flex;
+	margin: 20px auto;
+}
+.about_content   {
+	max-width: 1000px;
+	width: 100%;
+	height:480px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin:0 auto;
+
+}
+.about_content_title  {
+	max-width: 280px;
+	width: 100%;
+	height:120px;
+	display: flex;
+
+}
+.about_content_title>span   {
+	font-family: HelveticaNeueCyr;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120px;
+	color: #fff;
+}
+.about_content_text  {
+	max-width: 970px;
+	width: 100%;
+	height:450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.about_content_text>p{
+	font-family: 'Helvetica Neue Cyr Thin',sans-serif;
+	font-style: normal;
+	font-weight:100;
+	font-size: 26px;
+	line-height: 35px;
+	color: #A6A6A6;
+	word-spacing:4px;
+}
+
+/*/////////// mdedia about //////////////////////*/
+
+@media (min-width: 280px) {
+	.about_content_text>p{
+		margin: 150px 0 0 0;
+	}
+}
+
+@media (min-width: 375px) {
+	.about_content_text>p{
+		margin: 0;
+	}
+}
+
+@media (max-width:1050px){
+    .block_about_info{
+        padding:5px 30px;
+        max-width: 980px;
+    	width: 100%;
+    }
+    .about_content_text {
+    justify-content: space-around;
+}
+}
+
+@media (max-width:850px){
+	.about_content_text>p {
+    font-size: 18px;
+}
+
+}
+
+@media (max-width:450px){
+	.about_content {
+    height: auto;
+}
+	.about_content_text>p {
+    padding: 5px 0px;
+}
+.about_content_text {
+	height: auto;
+    padding: 5px 0px;
+
+}
+.block_about_info {
+    padding: 0px 30px 20px 30px;
+ 
+}
+ul li a {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+}

@@ -8,6 +8,9 @@
     url('../assets/fonts/HelveticaNeueCyr-Bold.eot');
     font-weight: bold;
 }
+ul li a {
+    font-weight: bold;
+}
 .preloader {
     position: fixed;
     left: 0;
@@ -575,7 +578,7 @@ footer .footer_img img {
 .nav_menu {
     display: none;
 }
-.form button:not(.form .budget div button) {
+.form button {
     outline: none;
     height: 40px;
     border: none;
@@ -590,7 +593,7 @@ footer .footer_img img {
     font-size: 0.9em;
     cursor: pointer;
 }
-.form button:not(.form .budget div button):hover {
+.form button:hover {
     background: #034aff;
     transition: 0.3s;
 }
