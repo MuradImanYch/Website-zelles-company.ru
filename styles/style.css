@@ -997,6 +997,9 @@ footer .footer_img img {
         height: 260px;
         margin: 25px 0 0 0;
     }
+    .form {
+        height: 60vh;
+    }
     .form h2 span {
         width: 500px;
     }
@@ -1007,17 +1010,17 @@ footer .footer_img img {
         width: 500px;
     }
     .form img:nth-child(1) {
-        top: 100px;
-        width: 200px;
+        top: -150px;
+        width: 300px;
     }
     .form img:nth-child(2) {
-        top: 20px;
-        width: 190px;
+        top: 50px;
+        width: 290px;
     }
     .form img:nth-child(3) {
         z-index: -1;
-        top: 70px;
-        width: 300px;
+        top: 0px;
+        width: 400px;
         right: 20px;
     }
     .footer_content {
@@ -1251,16 +1254,12 @@ footer .footer_img img {
         height: 500px;
     }
     .header .animGlare:nth-child(4) {
-        background: #46d8d5;
-        box-shadow: 0px 0px 40px 100px #47eae0;
         top: 250px;
         right: 20px;
         animation: glare4 10s infinite;
         filter: blur(50px);
     }
     .header .animGlare:nth-child(5) {
-        background: #0094ff;
-        box-shadow: 0px 0px 40px 100px #0094ff;
         top: 150px;
         right: 200px;
         animation: glare5 10s infinite;
@@ -1352,6 +1351,9 @@ footer .footer_img img {
     }
     .portfolio button {
         width: 180px;
+    }
+    .form {
+        height: 100vh;
     }
     .form .container {
         width: 1000px;
