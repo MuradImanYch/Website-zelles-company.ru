@@ -8,9 +8,6 @@
     url('../assets/fonts/HelveticaNeueCyr-Bold.eot');
     font-weight: bold;
 }
-ul li a {
-    font-weight: bold;
-}
 .preloader {
     position: fixed;
     left: 0;
@@ -548,7 +545,7 @@ h2 span {
     justify-content: center;
 }
 .form {
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
     position: relative;
 }
 .form img:nth-child(1) {
@@ -654,7 +651,7 @@ footer .footer_img img {
 .footer_title>span{
 	font-family: HelveticaNeueCyr;
 	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	line-height: 24px;
 	color: #fff;
 }
@@ -664,7 +661,6 @@ footer .footer_img img {
 	justify-content: space-around;
 }
 .foote_colum_content.left>p{
-	font-family: HelveticaNeueCyr;
 	font-size: 1.2em;
 	line-height: 24px;
     color: rgba(255, 255, 255, 0.4);
@@ -689,8 +685,7 @@ footer .footer_img img {
 	font-family: HelveticaNeueCyr;
 }
 .foote_colum_content.center>ul>li>a{
-	font-family: HelveticaNeueCyr;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 24px;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -703,8 +698,7 @@ footer .footer_img img {
 	justify-content: space-around;
 }
 .foote_colum_content.right>span{
-	font-family: HelveticaNeueCyr;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 24px;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -1036,9 +1030,6 @@ footer .footer_img img {
         width: 330px;
         height: 260px;
         margin: 25px 0 0 0;
-    }
-    .form {
-        height: 60vh;
     }
     .form h2 span {
         width: 500px;
@@ -1395,9 +1386,7 @@ footer .footer_img img {
     .portfolio button {
         width: 180px;
     }
-    .form {
-        height: 100vh;
-    }
+
     .form .container {
         width: 1000px;
     }

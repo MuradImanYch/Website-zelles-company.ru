@@ -283,7 +283,6 @@ header .barsWrap {
     border: 1px solid #272339;
 }
 .form {
-    margin: 120px 0 0 0;
     position: relative;
 }
 .form img:nth-child(1) {
@@ -489,9 +488,6 @@ header .barsWrap {
         font-size: 0.9em;
         height: 50px;
     }
-    .form {
-        height: 60vh;
-    }
     .form h2 span {
         width: 500px;
     }
@@ -529,9 +525,6 @@ header .barsWrap {
     }
     .container {
         width: 1000px;
-    }
-    h2 {
-        font-size: 2em;
     }
     .barsWrap {
         display: none;
@@ -603,9 +596,6 @@ header .barsWrap {
         width: 170px;
         font-size: 1.1em;
         height: 100%;
-    }
-    .form {
-        height: 100vh;
     }
     .form .container {
         width: 1000px;
