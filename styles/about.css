@@ -95,10 +95,6 @@
 	.block_about_info {
 		padding: 0px 30px 20px 30px;
 	}
-	ul li a {
-		font-weight: bold;
-		font-family: Arial, Helvetica, sans-serif;
-	}
 }
 
 @media (min-width: 768px) {
