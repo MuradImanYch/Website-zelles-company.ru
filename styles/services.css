@@ -125,6 +125,21 @@ h2 {
     height: 85%;
     margin: 10px auto;
 }
+#inner_item {
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart_inner_text{
+    height: 40px;
+    font-size: 0.7em;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0 0 0;
+} 
 .cart .inner div h3 {
     font-size: 1em;
     color: #fff;
@@ -154,6 +169,7 @@ h2 {
 }
 .cart .inner div div p img {
     width: 20px;
+    margin: 0 2px;
 }
 .cart .inner div div p:first-child {
     background: #272339;
@@ -167,6 +183,7 @@ h2 {
 header {
     height: 54px;
     width: 100%;
+    padding: 30px 0;
 }
 header .container {
     display: flex;
@@ -382,13 +399,13 @@ header .barsWrap {
         width: 120px;
     }
     .cart .inner div div p:first-child span {
-        margin: 0 0 0 20px;
+        margin: 0;
     }
     .cart .inner div div p span {
         font-size: 1.1em;
     }
     .cart .inner div div p {
-        width: 120px;
+        width: 150px;
     }
     .mobMenuWrap {
         width: 300px;
@@ -411,7 +428,8 @@ header .barsWrap {
         font-size: 0.9em;
     }
     .cart .inner div div p span {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        padding: 0 0 0 10px;
     }
     .mobMenuWrap {
         width: 300px;
@@ -452,7 +470,7 @@ header .barsWrap {
         margin: 50px 0 0 0;
     }
     .cart {
-        width: 300px;
+        width: 325px;
     }
     .cart:first-child {
         margin: 25px 0 0 0;
@@ -501,11 +519,14 @@ header .barsWrap {
 
 @media (min-width: 820px) { /* >= 820px */
     .cart .inner div div p span {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 1024px) { /* >= 1024px */
+    header {
+        padding: 5px 0;
+    }
     .container {
         width: 1000px;
     }
