@@ -186,13 +186,43 @@ header .barsWrap {
     margin: 10px 0 0 0;
     line-height: 1.4;
 }
+.working_mode {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.working_mode_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.working_mode_item {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+.working_mode_item>span{
+font-family: HelveticaNeueCyr;
+Font size: 18px;
+Line height: 27px;
+Letter spacing: 1%;
+color:#FFFFFF;
+}
+#working_mode_img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+
+
 .header section img {
     width: 200px;
     transform: rotate(4deg);
     animation: headImg 5s infinite;
 }
 .header section div:nth-child(1) {
-    width: 250px;
+    max-width: 430px;
 }
 section {
     padding: 50px 0 0 0;
@@ -687,6 +717,9 @@ footer .footer_img img {
 }
 
 @media (min-width: 280px) { /* >= 280px */
+    .working_mode {
+        font-size: 0.6em;    
+    }
     .header section h1 {
         font-size: 1.3em;
     }
@@ -715,25 +748,25 @@ footer .footer_img img {
     }
     .header section img:nth-child(2) {
         right: 90px;
-        top: 72px;
+        top: 92px;
         width: 45px;
         z-index: 2;
     }
     .header section img:nth-child(3) {
         right: 95px;
-        top: 100px;
+        top: 120px;
         width: 40px;
         z-index: 2;
     }
     .header section img:nth-child(4) {
         right: 0px;
-        top: 98px;
+        top: 118px;
         width: 15px;
         z-index: 2;
     }
     .header section img:nth-child(5) {
         right: 2px;
-        top: 55px;
+        top: 75px;
         width: 120px;
     }
 }
@@ -756,25 +789,25 @@ footer .footer_img img {
     }
     .header section img:nth-child(2) {
         right: 105px;
-        top: 80px;
+        top: 100px;
         width: 45px;
         height: 50px;
     }
     .header section img:nth-child(3) {
-        right: 115px;
-        top: 110px;
+        right: 113px;
+        top: 130px;
         width: 40px;
         height: 45px;
     }
     .header section img:nth-child(4) {
         right: 5px;
-        top: 105px;
+        top: 125px;
         width: 15px;
         height: 44px;
     }
     .header section img:nth-child(5) {
         right: 10px;
-        top: 65px;
+        top: 85px;
         width: 125px;
     }
 }
@@ -794,30 +827,33 @@ footer .footer_img img {
     }
     .header section img:nth-child(2) {
         right: 135px;
-        top: 70px;
+        top: 90px;
         width: 60px;
         height: 60px;
     }
     .header section img:nth-child(3) {
         right: 145px;
-        top: 105px;
+        top: 125px;
         width: 50px;
         height: 55px;
     }
     .header section img:nth-child(4) {
         right: 5px;
-        top: 105px;
+        top: 125px;
         width: 20px;
         height: 50px;
     }
     .header section img:nth-child(5) {
         right: 10px;
-        top: 50px;
+        top: 70px;
         width: 165px;
     }
 }
 
 @media (min-width: 414px) { /* >= 414px */
+    .working_mode {
+        font-size: 0.7em;    
+    }
     .header section h3 {
         width: 150px;
     }
@@ -830,25 +866,25 @@ footer .footer_img img {
     }
     .header section img:nth-child(2) {
         right: 155px;
-        top: 65px;
+        top: 85px;
         width: 65px;
         height: 65px;
     }
     .header section img:nth-child(3) {
         right: 165px;
-        top: 110px;
+        top: 130px;
         width: 55px;
         height: 60px;
     }
     .header section img:nth-child(4) {
         right: 5px;
-        top: 100px;
-        width: 20px;
+        top: 120px;
+        width: 22px;
         height: 65px;
     }
     .header section img:nth-child(5) {
         right: 5px;
-        top: 40px;
+        top: 60px;
         width: 200px;
     }
     h2 {
@@ -863,6 +899,7 @@ footer .footer_img img {
 }
 
 @media (min-width: 540px) { /* >= 540px */
+
     .header section h1 {
         font-size: 1.7em;
     }
@@ -884,25 +921,25 @@ footer .footer_img img {
     }
     .header section img:nth-child(2) {
         right: 205px;
-        top: 60px;
+        top: 80px;
         width: 80px;
         height: 80px;
     }
     .header section img:nth-child(3) {
         right: 215px;
-        top: 115px;
+        top: 135px;
         width: 70px;
         height: 70px;
     }
     .header section img:nth-child(4) {
         right: 0px;
-        top: 95px;
+        top: 120px;
         width: 30px;
         height: 85px;
     }
     .header section img:nth-child(5) {
         right: 5px;
-        top: 32px;
+        top: 52px;
         width: 255px;
     }
     .benefits .list .col p:last-child {
@@ -1080,6 +1117,9 @@ footer .footer_img img {
 }
 
 @media (min-width: 1024px) { /* >= 1024px */
+    .working_mode {
+        font-size: 0.9em;   
+    }
     @keyframes glare1 {
         0% {
             width: 80px;
@@ -1369,6 +1409,12 @@ footer .footer_img img {
         justify-content: space-between;
     }
     .foote_colum_content.left>p{
-        width: 350px;
+        width: 300px;
+    }
+}
+@media (max-width:870px){
+    .working_mode {
+        flex-direction: column;
+        align-items: baseline;
     }
 }
