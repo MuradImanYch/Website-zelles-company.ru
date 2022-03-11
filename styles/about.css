@@ -125,3 +125,15 @@
         width: 350px;
     }
 }
+
+@media (min-width: 1280px) {
+    .about_content  {
+        min-width: 1200px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .about_content  {
+        min-width: 1600px;
+    }
+}
