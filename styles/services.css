@@ -180,6 +180,10 @@ h2 {
 .cart .inner div div p:last-child span {
     font-weight: bold;
 }
+.mobMenuWrap a {
+    color: #000;
+    font-family: HelveticaNeueCyr;
+}
 header {
     height: 54px;
     width: 100%;

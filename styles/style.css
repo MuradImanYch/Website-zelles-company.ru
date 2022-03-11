@@ -97,7 +97,7 @@ header {
     height: 100%;
 }
 header .container img {
-    width: 120px;
+    width: 140px;
     cursor: pointer;
 }
 header .barsWrap .bar1, header .barsWrap .bar2 {
@@ -123,9 +123,9 @@ header .barsWrap {
     width: 80px;
     height: 80px;
     position: absolute;
-    z-index: -1;
     right: 0;
     border-radius: 50%;
+    z-index: -1;
 }
 .header .animGlare:nth-child(1) {
     top: 0;
@@ -361,6 +361,13 @@ section {
 .header .mobMenuWrap p {
     font-size: 2em;
 }
+.header .mobMenuWrap a {
+    color: #000;
+    font-family: HelveticaNeueCyr;
+}
+.header .mobMenuWrap img {
+    width: 12px;
+}
 .header .mobMenuWrap .colWrap {
     display: flex;
     justify-content: space-between;
@@ -381,6 +388,7 @@ section {
 }
 .header .mobMenuWrap .colWrap .col:first-child span {
     color: gray;
+    font-size: 0.8em;
 }
 .header .mobMenuWrap .colWrap .col:last-child {
     font-size: 0.9em;
@@ -544,10 +552,12 @@ h2 span {
 .form img:nth-child(1) {
     top: 120px;
     width: 150px;
+    z-index: -1;
 }
 .form img:nth-child(2) {
     top: 40px;
     width: 150px;
+    z-index: -2;
 }
 .form img:nth-child(3) {
     z-index: -1;
@@ -1042,10 +1052,8 @@ footer .footer_img img {
         width: 290px;
     }
     .form img:nth-child(3) {
-        z-index: -1;
         top: 0px;
         width: 400px;
-        right: 20px;
     }
     .footer_content {
         flex-direction: row;
@@ -1437,6 +1445,9 @@ footer .footer_img img {
     }
     .footer_content { 
         min-width: 1700px;
+    }
+    .nav_menu>ul>li>a{
+        font-size: 1.3em;
     }
 }
 
