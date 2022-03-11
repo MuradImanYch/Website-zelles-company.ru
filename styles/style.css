@@ -188,6 +188,7 @@ header .barsWrap {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    line-height: 1.3;
 }
 .working_mode_inner {
     display: flex;
@@ -1392,7 +1393,53 @@ footer .footer_img img {
     .foote_colum_content.left>p{
         width: 350px;
     }
+    .working_mode {
+        width: 440px;
+    }
 }
+
+@media (min-width: 1280px) { /* >= 1280px */
+    .header header .container {
+        width: 1200px;
+    } 
+    .header section .container {
+        min-width: 1200px;
+    }
+    .benefits .container {
+        width: 1200px;
+    }
+    .portfolio .container {
+        width: 1200px;
+    }
+    .form .container {
+        width: 1200px;
+    }
+    .footer_content { 
+        min-width: 1300px;
+    }
+}
+
+@media (min-width: 1680px) { /* >= 1680px */ 
+    .header header .container {
+        width: 1600px;
+    } 
+    .header section .container {
+        min-width: 1600px;
+    }
+    .benefits .container {
+        width: 1600px;
+    }
+    .portfolio .container {
+        width: 1600px;
+    }
+    .form .container {
+        width: 1600px;
+    }
+    .footer_content { 
+        min-width: 1700px;
+    }
+}
+
 @media (max-width:870px){
     .working_mode {
         flex-direction: column;
