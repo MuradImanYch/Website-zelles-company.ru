@@ -1,9 +1,7 @@
 * {
     font-family: HelveticaNeueCyr;
 }
-::-webkit-scrollbar {
-  width: 0;
-}
+
 @font-face {
     font-family: HelveticaNeueCyr;
     src: url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
@@ -104,12 +102,20 @@ header .container img {
     width: 140px;
     cursor: pointer;
 }
-header .barsWrap .bar1, header .barsWrap .bar2,header .barsWrap .bar3  {
+header .barsWrap .bar1, header .barsWrap .bar2{
   width: 35px;
   height: 3px;
   background-color: #fff;
   margin: 7px 0;
   transition: 0.4s;
+}
+
+header .barsWrap .bar3  {
+    width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 7px 0;
+  transition: 0.3s;
 }
 
 header .barsWrap {
