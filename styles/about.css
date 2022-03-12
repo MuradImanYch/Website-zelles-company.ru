@@ -6,7 +6,6 @@
 }
 .block_about_info {
 	display: flex;
-	margin: 20px auto;
 }
 .about_content   {
 	max-width: 1000px;
