@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 .header.services {
- height: 100px;
+    height: 100px;
 }
 .services {
     margin: 0 0 0 0;
@@ -38,9 +38,14 @@ h2 {
     font-weight: bold;
 }
 .wrap {
-    display: flex;
     flex-direction: column;
     margin: 60px 0 0 0;
+}
+.webDev {
+    display: flex;
+}
+.grapDes, .promotion {
+    display: none;
 }
 .cart {
     width: 100%;
@@ -68,7 +73,6 @@ h2 {
 .cart_inner_text{
     height: 40px;
     font-size: 0.7em;
-    line-height: 1.3;
     color: rgba(255, 255, 255, 0.7);
     margin: 10px 0 0 0;
 } 
@@ -79,7 +83,7 @@ h2 {
 }
 .cart .inner div p {
     font-size: 0.7em;
-    line-height: 1.3;
+    line-height: 1.2;
     color: rgba(255, 255, 255, 0.7);
     margin: 10px 0 0 0;
 }
@@ -211,11 +215,11 @@ header .barsWrap {
 .filter button:first-child {
     background: #272339;
     color: #fff;
+    border: 1px solid #272339;
 }
 .filter button:not(:first-child) {
     background: #000;
     color: rgba(255, 255, 255, 0.4);
-    border: 1px solid #272339;
 }
 .form {
     position: relative;
@@ -313,7 +317,7 @@ header .barsWrap {
         font-size: 1.1em;
     }
     .cart .inner div p {
-        font-size: 0.72em;
+        font-size: 0.70em;
     }
     .mobMenuWrap {
         width: 290px;
@@ -329,9 +333,6 @@ header .barsWrap {
 @media (min-width: 375px) { /* >= 375px */
     .cart .inner div h3 {
         font-size: 1.2em;
-    }
-    .cart .inner div p {
-        font-size: 0.8em;
     }
     .cart .inner div div p:first-child {
         width: 120px;
@@ -363,7 +364,7 @@ header .barsWrap {
         font-size: 1.3em;
     }
     .cart .inner div p {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     .cart .inner div div p span {
         font-size: 1.1em;
@@ -391,7 +392,7 @@ header .barsWrap {
         font-size: 1.2em;
     }
     .cart .inner div p {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .filter button {
         width: 110px;
@@ -414,7 +415,7 @@ header .barsWrap {
         margin: 25px 0 0 0;
     }
     .cart .inner div p {
-        font-size: 0.75em;
+        font-size: 0.72em;
     }
     .cart .inner div div p:first-child {
         width: 130px;
@@ -449,6 +450,9 @@ header .barsWrap {
         top: 0px;
         width: 400px;
         right: 20px;
+    }
+    .filter {
+        justify-content: space-evenly;
     }
 }
 
