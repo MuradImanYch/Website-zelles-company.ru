@@ -445,6 +445,10 @@ h2 span {
 .benefits .list .col p:not(.benefits .list .col p:last-child) {
     color: #fff;
 }
+.benefits .list .col p:nth-child(2) {
+    border-left: 1px solid #47EAE0;
+    padding: 0 0 0 8px;
+}
 .benefits .list .col img {
     width: 50px;
 }
@@ -1007,7 +1011,6 @@ footer .footer_img img {
 }
 
 @media (min-width: 540px) { /* >= 540px */
-
     .header section h1 {
         font-size: 1.7em;
     }
