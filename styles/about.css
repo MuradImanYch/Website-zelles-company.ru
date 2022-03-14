@@ -1,6 +1,3 @@
-* {
-    font-family: HelveticaNeueCyr;
-}
 .header.about {
 	height: 150px;
 }
@@ -9,16 +6,12 @@
 }
 .about_content   {
 	max-width: 1000px;
-	width: 100%;
-	height:480px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin:0 auto;
 }
 .about_content_title  {
-	max-width: 280px;
-	width: 100%;
 	height:120px;
 	display: flex;
 }
@@ -31,9 +24,7 @@
 	color: #fff;
 }
 .about_content_text  {
-	max-width: 970px;
-	width: 100%;
-	height:450px;
+	height: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
