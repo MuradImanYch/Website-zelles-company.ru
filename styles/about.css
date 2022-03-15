@@ -19,7 +19,7 @@
 	display: flex;
 }
 .about_content_title>span   {
-	font-family: HelveticaNeueCyr;
+	font-family: HelveticaNeueCyrBold;
 	font-size: 3em;
 	font-style: normal;
 	font-weight: 700;

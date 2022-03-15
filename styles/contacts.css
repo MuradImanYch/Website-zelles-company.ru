@@ -1,3 +1,13 @@
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: url('../assets/fonts/helveticaneuecyr_thin.otf');
+}
+@font-face {
+    font-family: HelveticaNeueCyrBold;
+    src: url('../assets/fonts/HelveticaNeueCyr-Bold.eot'),
+    url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
+    url('../assets/fonts/HelveticaNeueCyr-Bold.woff');
+}
 .header.contacts{
     height: 150px;
 }
@@ -18,7 +28,7 @@
 }
 .contacts_title>h2{
 
-font-family: HelveticaNeueCyr;
+font-family: HelveticaNeueCyrBold;
 font-style: Bold;
 font-size: 3em;
 line-height: 120px;
@@ -77,14 +87,14 @@ color:#fff;
     justify-content: center;
 }
 .contacts_item_text>span:first-child{
-font-family: 'Montserrat',sans-serif;
+font-family:  HelveticaNeueCyr;
 font-size: 20px;
 font-weight: 300;
 line-height: 24px;
 }
 .contacts_item_text>span{
 margin-top: 5px;
-font-family: 'Montserrat', sans-serif;
+font-family:  HelveticaNeueCyrBold;
 font-weight:Bold;
 font-size: 1.2em;
 line-height: 30px;
@@ -92,7 +102,7 @@ line-height: 30px;
 
 .contacts_item_text>span>a{
 margin-top: 5px;
-font-family: 'Montserrat', sans-serif;
+font-family:  HelveticaNeueCyrBold;
 font-weight:Bold;
 font-size: 0.6em;
 line-height: 30px;
