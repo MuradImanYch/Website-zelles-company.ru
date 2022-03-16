@@ -1,6 +1,6 @@
 let barToggle = false;
 let btn_show = $("#btn_show");
-let item_show = $('.portfolio_content_item.show');
+let item_show = $('.portfolio_content .show');
 
 $(document).ready(() => {
     $('.barsWrap').click(() => { // menu bar anim func
@@ -20,7 +20,7 @@ $(document).ready(() => {
     });
   
     btn_show.on('click',function(e) { // show more | portfolio.html
-        item_show.css('display','flex');
+        item_show.css('display','block');
     });
 
 });
