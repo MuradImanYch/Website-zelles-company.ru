@@ -15,6 +15,16 @@
     margin: 0 0 0 0;
     position: relative;
 }
+#glare1, #glare2 {
+    position: absolute;
+    animation: glare1 7s infinite;
+}
+[data-color="white"] {
+    color:rgba(255, 255, 255, 1)!important;
+    text-decoration: underline #55E8E3;
+    transition: 3s;
+    text-underline-offset: 6px;
+}
 .services > img:nth-child(1) {
     right: 0;
     top: 250px;
@@ -66,10 +76,8 @@ h2 {
 }
 .cart_inner_text{
     height: 40px;
-    font-size: 0.7em;
     color: rgba(255, 255, 255, 0.7);
     margin: 10px 0 0 0;
-    letter-spacing: 1px;
 } 
 .cart .inner div h3 {
     font-size: 1em;
@@ -286,6 +294,15 @@ header .barsWrap {
 }
 
 @media (min-width: 280px) { /* >= 280px */
+    #glare1, #glare2 {
+        min-width: 130px;
+        top: 150px;
+        z-index: -1;
+        min-height: 380px;
+    }
+    #glare2 {
+        top: 1500px;
+    }
     .mobMenuWrap {
         width: 250px;
         padding: 10px;
@@ -301,7 +318,23 @@ header .barsWrap {
         border: 0;
         cursor: pointer;
     }
-
+    @keyframes glare1 {
+        0% {
+            min-width: 130px;
+        }
+        25% {
+            min-width: 145px;
+        }
+        50% {
+            min-width: 150px;
+        }
+        75% {
+            min-width: 140px;
+        }
+        100% {
+            min-width: 130px;
+        }
+    }
 }
 
 @media (min-width: 320px) { /* >= 320px */
@@ -309,7 +342,7 @@ header .barsWrap {
         font-size: 1.1em;
     }
     .cart .inner div p {
-        font-size: 0.70em;
+        font-size: 0.7em;
     }
     .mobMenuWrap {
         width: 290px;
@@ -346,17 +379,27 @@ header .barsWrap {
         width: 80px;
         font-size: 0.6em;
     }
+    .cart .inner div p { 
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 414px) { /* >= 414px */
+    #glare1, #glare2 {
+        min-width: 170px;
+        min-height: 500px;
+    }
+    #glare2 {
+        top: 1100px;
+    }
     .cart {
-        min-height: 180px;
+        min-height: 170px;
     }
     .cart .inner div h3 {
         font-size: 1.3em;
     }
     .cart .inner div p {
-        font-size: 0.8em;
+        font-size: 0.85em;
     }
     .cart .inner div div p span {
         font-size: 1.1em;
@@ -369,6 +412,23 @@ header .barsWrap {
         height: 45px;
         width: 90px;
         font-size: 0.7em;
+    }
+    @keyframes glare1 {
+        0% {
+            min-width: 170px;
+        }
+        25% {
+            min-width: 300px;
+        }
+        50% {
+            min-width: 405px;
+        }
+        75% {
+            min-width: 385px;
+        }
+        100% {
+            min-width: 170px;
+        }
     }
 }
 
@@ -383,9 +443,6 @@ header .barsWrap {
     .cart .inner div h3 {
         font-size: 1.2em;
     }
-    .cart .inner div p {
-        font-size: 0.7em;
-    }
     .filter button {
         width: 110px;
         font-size: 0.8em;
@@ -393,6 +450,13 @@ header .barsWrap {
 }
 
 @media (min-width: 768px) { /* >= 768px */
+    #glare1, #glare2 {
+        min-width: 200px;
+        min-height: 600px;
+    }
+    #glare2 {
+        top: 500px;
+    }
     .wrap {
         flex-direction: row;
         flex-wrap: wrap;
@@ -407,9 +471,6 @@ header .barsWrap {
     }
     .cart:first-child {
         margin: 25px 10px 0 0;
-    }
-    .cart .inner div p {
-        font-size: 0.72em;
     }
     .cart .inner div div p:first-child {
         width: 130px;
@@ -444,6 +505,23 @@ header .barsWrap {
         top: 0px;
         width: 400px;
         right: 20px;
+    }
+    @keyframes glare1 {
+        0% {
+            min-width: 200px;
+        }
+        25% {
+            min-width: 290px;
+        }
+        50% {
+            min-width: 355px;
+        }
+        75% {
+            min-width: 290px;
+        }
+        100% {
+            min-width: 200px;
+        }
     }
 }
 
@@ -550,6 +628,18 @@ header .barsWrap {
     .cart:first-child {
         margin: 25px 15px 0 0;
     }
+    #glare1 {
+        top: 0;
+    }
+    #glare2 {
+        top: 300px;
+    }
+    .cart .inner div div p span {
+        font-size: 1em;
+    }
+    .cart .inner div p {
+        font-size: 0.8em;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -571,10 +661,38 @@ header .barsWrap {
     }
     .cart .inner div p {
         font-size: 0.85em;
-        line-height: 1.3;
+        line-height: 1.4;
     }
     .cart .inner div {
         margin: 10px 0 0 0;
+    }
+    .cart .inner div div p span {
+        font-size: 1.1em;
+    }
+    #glare1, #glare2 {
+        top: -10px;
+        min-width: 250px;
+        min-height: 700px;
+    }
+    @keyframes glare1 {
+        0% {
+            min-width: 250px;
+        }
+        25% {
+            min-width: 145px;
+        }
+        50% {
+            min-width: 150px;
+        }
+        75% {
+            min-width: 140px;
+        }
+        100% {
+            min-width: 250px;
+        }
+    }
+    #glare2 {
+        top: 250px;
     }
 }
 
@@ -585,4 +703,14 @@ header .barsWrap {
     header .container {
         width: 1600px;
     } 
+    #glare1, #glare2 {
+        min-width: 300px;
+        min-height: 600px;
+    }
+    #glare1 {
+        top: -200px;
+    }
+    #glare2 {
+        top: 250px;
+    }
 }

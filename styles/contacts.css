@@ -24,7 +24,12 @@
     height: 120px;
     display: flex;
     justify-content: flex-start;
-
+}
+[data-color="white"] {
+    color:rgba(255, 255, 255, 1)!important;
+    text-decoration: underline #55E8E3;
+    transition: 3s;
+    text-underline-offset: 6px;
 }
 .contacts_title>h2{
 

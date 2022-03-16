@@ -1,5 +1,6 @@
 let barToggle = false;
 let btn_show = $("#btn_show");
+let item_show = $('.portfolio_content_item.show');
 
 $(document).ready(() => {
     $('.barsWrap').click(() => { // menu bar anim func
@@ -16,6 +17,10 @@ $(document).ready(() => {
             $('header .barsWrap .bar3').fadeIn(700).css({display: 'block'}).css({transform: 'rotate(-180deg)'}).css({width: '35px'}).css({background: '#fff'});
             $('.header .mobMenuWrap').fadeOut();
         }
+    });
+  
+    btn_show.on('click',function(e) { // show more | portfolio.html
+        item_show.css('display','flex');
     });
 
 });
