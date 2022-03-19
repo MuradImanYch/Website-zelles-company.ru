@@ -103,6 +103,10 @@
         align-items: center;
         font-size: 0.85em;
 }
+#btn_show:hover {
+        background: #29292b;
+        transition: 0.3s;
+}
 
 .show{
        display: none;
@@ -207,14 +211,27 @@
         }  
 }
 
+@media (min-width: 1024px) {
+        .hover-img {
+                width: 430px;
+        }
+}
+
 @media (min-width: 1280px) {
         .portfolio_content {
                 min-width: 1200px;
+        }
+        .hover-img {
+                width: 570px;
         }
 }
 
 @media (min-width: 1680px) {
         .portfolio_content {
                 min-width: 1600px;
+                margin-top: 60px;
+        }
+        .hover-img {
+                width: 750px;
         }
 }

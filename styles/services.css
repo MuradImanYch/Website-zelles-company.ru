@@ -457,6 +457,14 @@ header .barsWrap {
     #glare2 {
         top: 500px;
     }
+    #footerGlare1 {
+        top: 280px;
+    }
+    #footerGlare2 {
+        top: 100px;
+        z-index: -1;
+        left: 320px;
+    }
     .wrap {
         flex-direction: row;
         flex-wrap: wrap;
@@ -538,6 +546,9 @@ header .barsWrap {
 }
 
 @media (min-width: 1024px) { /* >= 1024px */
+    #footerGlare2 {
+        left: 530px;
+    }
     header {
         padding: 5px 0;
     }
@@ -643,6 +654,9 @@ header .barsWrap {
 }
 
 @media (min-width: 1280px) {
+    #footerGlare2 {
+        left: 900px;
+    }
     .container {
         width: 1200px;
     }
@@ -697,6 +711,9 @@ header .barsWrap {
 }
 
 @media (min-width: 1680px) {
+    #footerGlare2 {
+        left: 1360px;
+    }
     .container {
         width: 1600px;
     }
@@ -712,5 +729,8 @@ header .barsWrap {
     }
     #glare2 {
         top: 250px;
+    }
+    .services { 
+        margin: 170px 0 0 0;
     }
 }

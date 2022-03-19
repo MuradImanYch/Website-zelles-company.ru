@@ -1,244 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZelleS | Портфолио </title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
-    <link rel="stylesheet" href="assets/fonts/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZelleS | Портфолио </title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="assets/fonts/style.css">
 </head>
+
 <body>
-    <script type="text/javascript">
-        window.onload = function () {
+  <script type="text/javascript">
+    window.onload = function () {
       document.body.classList.add("loaded");
     }
   </script>
-    <div class="preloader">
-        <div class="preloader__row">
-        <div class="preloader__item"></div>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <div id="scrollbar">
+    <div id="scrollChild">
+      <div></div>
+    </div>
+  </div>
+  <div class="header pf">
+    <img src="assets/img/ellipse1.webp" alt="glare1" class="animGlare">
+    <img src="assets/img/ellipse2.webp" alt="glare2" class="animGlare">
+    <img src="assets/img/ellipse3.webp" alt="glare3" class="animGlare">
+    <img src="assets/img/ellipse4.webp" alt="glare4" class="animGlare">
+    <img src="assets/img/ellipse5.webp" alt="glare5" class="animGlare">
+    <header>
+      <div class="container">
+        <a href="/"><img src="assets/ico/logo.svg" alt="logo"></a>
+        <div class="barsWrap">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-    </div>
-    <div class="header pf">
-        <img src="assets/img/ellipse1.webp" alt="glare1" class="animGlare">
-        <img src="assets/img/ellipse2.webp" alt="glare2" class="animGlare">
-        <img src="assets/img/ellipse3.webp" alt="glare3" class="animGlare">
-        <img src="assets/img/ellipse4.webp" alt="glare4" class="animGlare">
-        <img src="assets/img/ellipse5.webp" alt="glare5" class="animGlare">
-        <header>
-            <div class="container">
-                <a href="/"><img src="assets/ico/logo.svg" alt="logo"></a>
-                <div class="barsWrap">
-                  <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="mobMenuWrap">
-                    <p>Меню</p>
-                    <div class="colWrap">
-                        <div class="col">
-                            <div class="col_item"><a href="portfolio.html">Портфолио</a> <span>01</span></div>
-                            <div class="col_item" ><a href="services.html">Услуги и цены</a> <span>02</span></div>
-                            <div class="col_item"><a href="about.html">О нас</a> <span>03</span></div>
-                            <div class="col_item"><a href="contacts.html">Контакты</a> <span>04</span></div>
-                            <div class="colWrap_linkArrow"><a target="_blank" href="https://vk.com/zellescompany"><span><img class="mob_icon" src="assets/ico/mob_menu_vk.svg" alt="link"></span></a><a target="_blank" href="https://www.instagram.com/zelles_company"><span><img class="mob_icon"  src="assets/ico/mob_menu_inst.svg" alt="link"></span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav_menu">
-                  <ul>
-                      <div class="ulWidth">
-                        <li ><a id="portfolio" href="portfolio.html" data-color="white">Портфолио</a></li>
-                        <li><a id="service" href="services.html">Услуги и цены</a></li>
-                        <li><a id="about" href="about.html">О нас</a></li>
-                        <li><a id="contacts" href="contacts.html">Контакты</a></li>
-                       </div>
-                       <li><a target="_blank" href="https://www.instagram.com/zelles_company/">
-                           <img id="nav_menu_icon"  src="assets/ico/instaLogo.svg" alt="instagram"></a>
-                           <a target="_blank" href="https://vk.com/zellescompany"><img id="nav_menu_icon" src="assets/ico/vkLogo.svg" alt="vk"></a>
-                           <button type="_self" name="order_button" onclick="window.location.href='index.html'";>Заказать звонок</button>
-                       </li>
-                   </ul>              
-               </div>
+        <div class="mobMenuWrap">
+          <p>Меню</p>
+          <div class="colWrap">
+            <div class="col">
+              <div class="col_item"><a href="portfolio.html">Портфолио</a> <span>01</span></div>
+              <div class="col_item"><a href="services.html">Услуги и цены</a> <span>02</span></div>
+              <div class="col_item"><a href="about.html">О нас</a> <span>03</span></div>
+              <div class="col_item"><a href="contacts.html">Контакты</a> <span>04</span></div>
+              <div class="colWrap_linkArrow"><a target="_blank" href="https://vk.com/zellescompany"><span><img
+                      class="mob_icon" src="assets/ico/mob_menu_vk.svg" alt="link"></span></a><a target="_blank"
+                  href="https://www.instagram.com/zelles_company"><span><img class="mob_icon"
+                      src="assets/ico/mob_menu_inst.svg" alt="link"></span></a> </div>
             </div>
-        </header>    
-    </div>
-<div class="container">
-  <div class="conteiner_portfolio">
-    <div class="portfolio_content">
-      <div class="portfolio_title"><span>Портфолио</span>
-        <span>Наши работы</span></div>
-          <div class="portfolio_cl">
-            <div class="work">
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                  <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                      <figcaption>
-                      <h4>Lorem <br/>Ipsum</h4>
-                      </figcaption>
-                  </a>
-              </div>
-              <div class="hover-img">
-                <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                    <figcaption>
-                    <h4>Lorem <br/>Ipsum</h4>
-                    </figcaption>
-                </a>
-              </div>
-              <div class="hover-img">
-                <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                    <figcaption>
-                    <h4>Lorem <br/>Ipsum</h4>
-                    </figcaption>
-                </a>
-              </div>
+          </div>
+        </div>
+        <div class="nav_menu">
+          <ul>
+            <div class="ulWidth">
+              <li><a id="portfolio" href="portfolio.html" data-color="white">Портфолио</a></li>
+              <li><a id="service" href="services.html">Услуги и цены</a></li>
+              <li><a id="about" href="about.html">О нас</a></li>
+              <li><a id="contacts" href="contacts.html">Контакты</a></li>
+            </div>
+            <li><a target="_blank" href="https://www.instagram.com/zelles_company/">
+                <img id="nav_menu_icon" src="assets/ico/instaLogo.svg" alt="instagram"></a>
+              <a target="_blank" href="https://vk.com/zellescompany"><img id="nav_menu_icon" src="assets/ico/vkLogo.svg"
+                  alt="vk"></a>
+              <button type="_self" name="order_button" onclick="window.location.href='index.html'" ;>Заказать
+                звонок</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <div class="conteiner_portfolio">
+      <div class="portfolio_content">
+        <div class="portfolio_title"><span>Портфолио</span>
+          <span>Наши работы</span>
+        </div>
+        <div class="portfolio_cl">
+          <div class="work">
             <div class="hover-img">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+                <img src="assets/img/layout1.webp" />
+                <figcaption>
+                    <h4>webdevcv <br />веб-сайт</h4>
+                </figcaption>
             </div>
             <div class="hover-img">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+                <img src="assets/img/layout2.webp" />
+                <figcaption>
+                    <h4>tiponline <br />веб-сайт</h4>
+                </figcaption>
+            </div>
+            <div class="hover-img">
+                <img src="assets/img/layout3.webp" />
+                <figcaption>
+                    <h4>fitness <br />веб-сайт</h4>
+                </figcaption>
+            </div>
+            <div class="hover-img">
+                <img src="assets/img/design1.webp" />
+                <figcaption>
+                    <h4>путешествие <br />дизайн</h4>
+                </figcaption>
+            </div>
+            <div class="hover-img">
+                <img src="assets/img/design2.webp" />
+                <figcaption>
+                    <h4>kia <br />дизайн</h4>
+                </figcaption>
+            </div>
+            <div class="hover-img">
+                <img src="assets/img/design3.webp" />
+                <figcaption>
+                    <h4>студия дизайна <br />дизайн</h4>
+                </figcaption>
+            </div>
+            <div class="hover-img">
+              <img src="assets/img/layout4.webp" />
+              <figcaption>
+                  <h4>grandrestaurant <br />веб-сайт</h4>
+              </figcaption>
+            </div>
+            <div class="hover-img">
+              <img src="assets/img/layout5.webp" />
+              <figcaption>
+                  <h4>switch <br />веб-сайт</h4>
+              </figcaption>
             </div>
             <div class="hover-img show">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+              <img src="assets/img/layout6.webp" />
+              <figcaption>
+                  <h4>service <br />веб-сайт</h4>
+              </figcaption>
             </div>
             <div class="hover-img show">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+              <img src="assets/img/layout7.webp" />
+              <figcaption>
+                  <h4>medicine <br />веб-сайт</h4>
+              </figcaption>
             </div>
             <div class="hover-img show">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+              <img src="assets/img/design5.webp" />
+              <figcaption>
+                  <h4>коммуникация <br />дизайн</h4>
+              </figcaption>
             </div>
             <div class="hover-img show">
-              <a href="#"><img src="https://picsum.photos/id/200/440/320.jpg"/>
-                  <figcaption>
-                  <h4>Lorem <br/>Ipsum</h4>
-                  </figcaption>
-              </a>
+              <img src="assets/img/design6.webp" />
+              <figcaption>
+                  <h4>партнёрство <br />дизайн</h4>
+              </figcaption>
             </div>
-          </div>
-    </div>
-
-
-
-<div class="btn_more_portf">
-  <batton id="btn_show">Загрузить ещё</batton>
-</div>
-    </div>
-</div>
-</div>
- <section class="form">
-  <img id="footerGlare1" src="assets/img/ellipse1.webp" alt="glare1" class="animGlare">
-  <img id="footerGlare2" src="assets/img/ellipse2.webp" alt="glare1" class="animGlare">
-  <img id="footerGlare3" src="assets/img/ellipse3.webp" alt="glare1" class="animGlare">
-  <img id="footerGlare4" src="assets/img/ellipseForm2.webp" alt="glare1" class="animGlare">
-        <div class="container">
-            <h2>Нужен новый сайт?<span>Оставьте свои данные, и мы свяжемся с вами, чтобы уточнить детали и 
-                приступить к разработке!
-                </span></h2>
-                <form action="">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="email" placeholder="Ваш телефон">
-                    <input type="text" placeholder="Краткое описание проекта">
-                </form>
-                <button>Написать нам</button>
-        </div>
-    </section>
-    <footer>
-        <div class="footer_content">
-          <div class="footer_column left">
-            <div class="footer_img">
-              <a href="/"><img src="assets/ico/logo.svg" alt="logo"></a>
+            <div class="hover-img show">
+              <img src="assets/img/design7.webp" />
+              <figcaption>
+                  <h4>интернет магазин косметика <br />дизайн</h4>
+              </figcaption>
             </div>
-            <div class="foote_colum_content left">
-              <p>Комплексное и качественное
-                  продвижение бизнеса в интернете.
-                  Продвижение и создание сайтов под
-                  ключ в ZelleS</p>
-            </div>
-          </div>
-          <div class="footer_column center">
-             <div class="footer_title">
-              <span>Разделы сайта</span>
-            </div>
-            <div class="foote_colum_content center">
-            <ul>
-              <li><a href="portfolio.html" title="">Портфолио</a></li>
-              <li><a href="services.html" title="">Услуги и цены</a></li>
-              <li><a href="about.html" title="">О нас</a></li>
-              <li><a href="contacts.html" title="">Контакты</a></li>  
-            </ul>
-            </div>
-          </div>
-          <div class="footer_column right">
-             <div class="footer_title">
-              <span>Наши контакты</span>
-            </div>
-              <div class="foote_colum_content right">
-               <span><a href="mailto:zellescompany@mail.ru">zellescompany@mail.ru</a></span>
-               <span><a href="tel:+79002144700">+7 (900) 214-47-00</a></span>
-               <span id="span_footer_icon"><a target="_blank" href="https://www.instagram.com/zelles_company/"><img id="nav_footer_icon" src="assets/ico/instaLogo.svg" alt="instagram"></a>
-               <a target="_blank" href="https://vk.com/zellescompany"><img id="nav_footer_icon" src="assets/ico/vkLogo.svg" alt="vk"></a></span>    
-            </div> 
           </div>
         </div>
-      </footer>
+        <div class="btn_more_portf">
+          <batton id="btn_show">Загрузить ещё</batton>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="form">
+    <img id="footerGlare1" src="assets/img/ellipse1.webp" alt="glare1" class="animGlare">
+    <img id="footerGlare2" src="assets/img/ellipse2.webp" alt="glare1" class="animGlare">
+    <img id="footerGlare3" src="assets/img/ellipse3.webp" alt="glare1" class="animGlare">
+    <img id="footerGlare4" src="assets/img/ellipseForm2.webp" alt="glare1" class="animGlare">
+    <div class="container">
+      <h2>Нужен новый сайт?<span>Оставьте свои данные, и мы свяжемся с вами, чтобы уточнить детали и
+          приступить к разработке!
+        </span></h2>
+      <form action="">
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="Ваш телефон">
+        <input type="text" placeholder="Краткое описание проекта">
+      </form>
+      <button>Написать нам</button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_content">
+      <div class="footer_column left">
+        <div class="footer_img">
+          <a href="/"><img src="assets/ico/logo.svg" alt="logo"></a>
+        </div>
+        <div class="foote_colum_content left">
+          <p>Комплексное и качественное
+            продвижение бизнеса в интернете.
+            Продвижение и создание сайтов под
+            ключ в ZelleS</p>
+        </div>
+      </div>
+      <div class="footer_column center">
+        <div class="footer_title">
+          <span>Разделы сайта</span>
+        </div>
+        <div class="foote_colum_content center">
+          <ul>
+            <li><a href="portfolio.html" title="">Портфолио</a></li>
+            <li><a href="services.html" title="">Услуги и цены</a></li>
+            <li><a href="about.html" title="">О нас</a></li>
+            <li><a href="contacts.html" title="">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_column right">
+        <div class="footer_title">
+          <span>Наши контакты</span>
+        </div>
+        <div class="foote_colum_content right">
+          <span><a href="mailto:zellescompany@mail.ru">zellescompany@mail.ru</a></span>
+          <span><a href="tel:+79002144700">+7 (900) 214-47-00</a></span>
+          <span id="span_footer_icon"><a target="_blank" href="https://www.instagram.com/zelles_company/"><img
+                id="nav_footer_icon" src="assets/ico/instaLogo.svg" alt="instagram"></a>
+            <a target="_blank" href="https://vk.com/zellescompany"><img id="nav_footer_icon" src="assets/ico/vkLogo.svg"
+                alt="vk"></a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

@@ -21,6 +21,85 @@ $(document).ready(() => {
   
     btn_show.on('click',function(e) { // show more | portfolio.html
         item_show.css('display','block');
+        $(this).hide();
     });
 
 });
+
+// <======= Scrollbar =======>
+
+var scrollChild = document.getElementById("scrollChild");
+
+var chet = 0;
+window.onscroll = function () {
+    bool_opacity = false;
+    var scrollTop = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+    scrollTop += innerHeight;
+    var a = document.body.clientHeight / innerHeight;
+    var b = document.body.clientHeight / scrollTop;
+    var c = 100 / (a - 1);
+    c = (a / b - 1) * c;
+    a = innerHeight - 210;
+    c = c / 100 * a;
+    scrollChild.style.top = c + 'px';
+
+    if (chet == 0) {
+        scrollChild.style.animation = 'shadow_reverse  0.7s';
+        scrollChild.style.opacity = 1;
+
+        var timer = setInterval(function () {
+            if (chet >= 100) {
+                scrollChild.style.animation = 'shadow  0.5s';
+                scrollChild.style.opacity = 0;
+                clearInterval(timer);
+            }
+            chet++;
+        }, 100);
+    } else {
+        chet = 0;
+    }
+}
+
+var body = document.getElementsByTagName("body")[0];
+is_active = false;
+
+scrollChild.onmousedown = function (event) {
+    is_active = true;
+    y = event.clientY;
+}
+
+body.onmouseup = function (event) {
+    is_active = false;
+}
+
+var y = 0;
+body.onmousemove = function (e) 
+{ 
+    var scrollTop = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+    if (is_active) {
+        var c_y = e.clientY;
+        var a = document.body.clientHeight / innerHeight;
+        window.scrollTo(0, scrollTop + (c_y - y) * a);
+        if (y < c_y) {
+            y = c_y;
+        } else if (y > c_y) {
+            y = c_y;
+        }
+    }
+};
+
+document.getElementById("scrollbar").addEventListener("mouseover", function () {
+    scrollChild.style.animation = 'shadow_reverse  0.7s';
+    scrollChild.style.opacity = 1;
+});
+
+document.getElementById("scrollbar").addEventListener("mouseout", function () {
+    if (!is_active) {
+        scrollChild.style.animation = 'shadow  0.5s';
+        scrollChild.style.opacity = 0;
+    }
+});
+
+document.getElementById("scrollbar").onmousedown = document.getElementById("scrollbar").onselectstart = function () {
+    return false;
+};

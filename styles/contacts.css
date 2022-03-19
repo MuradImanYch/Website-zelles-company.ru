@@ -165,5 +165,6 @@ color:#fff;
 @media (min-width: 1680px) {
     .conteiner_contacts  {
         min-width: 1600px;
+        margin-top: 170px;
     }
 }
