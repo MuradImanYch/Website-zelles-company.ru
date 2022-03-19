@@ -7,6 +7,9 @@
 .benefits {
 	margin: 150px 0 0 0;
 }
+.benefits .col:not(.benefits .col:first-child) {
+	margin: 100px 0 0 0;
+}
 [data-color="white"] {
   color:rgba(255, 255, 255, 1)!important;
     text-decoration: underline #55E8E3;
@@ -144,6 +147,9 @@
 	.howToWorkWithUs .inner img {
 		width: 200px;
 	}
+	.benefits .col:not(.benefits .col:first-child) {
+		margin: 120px 0 0 0;
+	}
 }
 
 @media (min-width: 414px) {
@@ -152,6 +158,9 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 230px;
+	}
+	.benefits .col:not(.benefits .col:first-child) {
+		margin: 150px 0 0 0;
 	}
 }
 
@@ -167,6 +176,9 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 210px;
+	}
+	.benefits .col:not(.benefits .col:first-child) {
+		margin: 10px 0 0 0;
 	}
 }
 
