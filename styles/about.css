@@ -89,11 +89,10 @@
 	margin: 100px 0 0 0;
 }
 .howToWorkWithUs .inner div:last-child {
-	margin: -40px 0 0 0;
 	text-align: center;
 }
 .howToWorkWithUs img {
-	width: 150px;
+	width: 200px;
 }
 
 @media (max-width:1050px){
@@ -133,19 +132,22 @@
 
 @media (min-width: 320px) {
 	.howToWorkWithUs .inner {
-		height: 380px;
+		height: 400px;
 	}
-	.howToWorkWithUs .inner img {
-		width: 180px;
+	.howToWorkWithUs .inner:not(:first-child) {
+		margin: 150px 0 0 0;
 	}
 }
 
 @media (min-width: 375px) {
+	.howToWorkWithUs .inner:not(:first-child) {
+		margin: 150px 0 0 0;
+	}
 	.howToWorkWithUs .inner {
-		height: 370px;
+		height: 380px;
 	}
 	.howToWorkWithUs .inner img {
-		width: 200px;
+		width: 250px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 120px 0 0 0;
@@ -153,11 +155,14 @@
 }
 
 @media (min-width: 414px) {
+	.howToWorkWithUs .inner:not(:first-child) {
+		margin: 200px 0 0 0;
+	}
 	.howToWorkWithUs .inner {
-		height: 420px;
+		height: 400px;
 	}
 	.howToWorkWithUs .inner img {
-		width: 230px;
+		width: 300px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 150px 0 0 0;
@@ -165,6 +170,9 @@
 }
 
 @media (min-width: 540px) {
+	.howToWorkWithUs .inner:not(:first-child) {
+		margin: 180px 0 0 0;
+	}
 	.howToWorkWithUs {
 		margin: 250px 0 0 0;
 	}
@@ -175,7 +183,7 @@
 		height: 350px;
 	}
 	.howToWorkWithUs .inner img {
-		width: 210px;
+		width: 220px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 10px 0 0 0;
