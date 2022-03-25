@@ -557,7 +557,7 @@ header .barsWrap {
     .barsWrap {
         display: none;
     }
-    .nav_menu {
+    /* .nav_menu {
         width: 100%;
         height: 85px;
         align-items: center;
@@ -612,21 +612,21 @@ header .barsWrap {
         width: 25px;
         height: 25px;
         margin: 5px 0 0 0;
-    }
-    .mobMenuWrap {
+    } */
+    /* .mobMenuWrap {
         display: none;
     }
     header .container {
         width: 1000px;
-    } 
+    }  */
     .filter button {
         width: 170px;
         font-size: 1.1em;
         height: 100%;
     }
-    .form .container {
+    /* .form .container {
         width: 1000px;
-    }
+    } */
     .filter button:not(:first-child) {
         margin: 0 0 0 50px;
     }
