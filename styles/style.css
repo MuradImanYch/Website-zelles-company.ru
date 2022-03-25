@@ -667,6 +667,7 @@ h2 span {
 
 .banefits_col_img {
     max-width: 400px;
+    width: 100%;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -676,6 +677,7 @@ h2 span {
 
 .banefits_col_item {
     max-width: 400px;
+    width: 100%;
     height: 220px;
     display: flex;
     flex-direction: column;

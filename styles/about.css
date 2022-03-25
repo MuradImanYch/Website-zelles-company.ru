@@ -56,7 +56,7 @@
 }
 
 .howToWorkWithUs {
-	margin: 150px 0 0 0;
+	padding: 170px 0 0 0;
 }
 .howToWorkWithUs .container {
 	width: 90%;
@@ -99,7 +99,6 @@
     .block_about_info{
         padding:5px 30px;
         max-width: 980px;
-    	width: 100%;
     }
     .about_content_text {
 		justify-content: space-around;
@@ -174,7 +173,7 @@
 		margin: 180px 0 0 0;
 	}
 	.howToWorkWithUs {
-		margin: 250px 0 0 0;
+		padding: 400px 0 0 0;
 	}
 	.howToWorkWithUs .wrap {
 		margin: 80px 0 0 0;
