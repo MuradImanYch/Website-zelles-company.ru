@@ -136,7 +136,6 @@ header .container {
     margin: auto;
 }
 header .container img {
-    width: 120px;
     cursor: pointer;
 }
 header .barsWrap .bar1, header .barsWrap .bar2 {
@@ -609,9 +608,10 @@ header .barsWrap {
         width: 80px;
         height: 35px;
     }
-    #nav_menu_icon{
+    .nav_menu_icon{
         width: 25px;
         height: 25px;
+        margin: 5px 0 0 0;
     }
     .mobMenuWrap {
         display: none;

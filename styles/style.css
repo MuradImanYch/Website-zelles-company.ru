@@ -271,7 +271,6 @@ header {
 }
 
 header .container img {
-    width: 140px;
     cursor: pointer;
 }
 
@@ -1922,7 +1921,7 @@ footer .footer_img img {
         height: 35px;
     }
 
-    #nav_menu_icon {
+    .nav_menu_icon {
         width: 28px;
         height: 28px;
         margin: 5px 0 0 0;

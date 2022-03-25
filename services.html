@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <script type="text/javascript">
+    <script>
         window.onload = function () {
         document.body.classList.add("loaded");
     }
     </script>
+
     <div class="preloader">
         <div class="preloader__row">
         <div class="preloader__item"></div>
@@ -48,15 +49,15 @@
                 </div>
                 <div class="nav_menu">
                     <ul>
-                        <div class="ulWidth">
+                        <ul class="ulWidth">
                             <li ><a id="portfolio" href="portfolio.html">Портфолио</a></li>
                             <li><a id="service" href="services.html" data-color="white">Услуги и цены</a></li>
                             <li><a id="about" href="about.html">О нас</a></li>
                             <li><a id="contacts" href="contacts.html">Контакты</a></li>
-                         </div>
+                         </ul>
                          <li><a target="_blank" href="https://www.instagram.com/zelles_company/">
-                             <img id="nav_menu_icon"  src="assets/ico/instaLogo.svg" alt="instagram"></a>
-                             <a target="_blank" href="https://vk.com/zellescompany"><img id="nav_menu_icon" src="assets/ico/vkLogo.svg" alt="vk"></a>
+                             <img class="nav_menu_icon"  src="assets/ico/instaLogo.svg" alt="instagram"></a>
+                             <a target="_blank" href="https://vk.com/zellescompany"><img class="nav_menu_icon" src="assets/ico/vkLogo.svg" alt="vk"></a>
                              <button type="_self" name="order_button" onclick="window.location.href='index.html'";>Заказать звонок</button>
                          </li>
                      </ul>              
