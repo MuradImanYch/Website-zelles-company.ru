@@ -127,7 +127,7 @@
     height: 100%;
 }
 
-.hover-img figcaption {
+.hover-img div {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -159,7 +159,7 @@
     opacity: 0.7;
 }
 
-.hover-img:hover figcaption {
+.hover-img:hover div {
     opacity: 1;
 }
 
