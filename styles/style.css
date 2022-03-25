@@ -270,11 +270,6 @@ header {
     margin: auto;
 }
 
-header .container img:first-child {
-    cursor: pointer;
-    width: 140px;
-}
-
 header .barsWrap .bar1, header .barsWrap .bar2 {
     width: 35px;
     height: 3px;
@@ -2103,9 +2098,6 @@ footer .footer_img img {
     }
     .ulWidth {
         width: 700px;
-    }
-    header .container img:first-child {
-        width: 170px;
     }
 }
 
