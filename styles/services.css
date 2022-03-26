@@ -156,12 +156,13 @@ h2 {
         padding: 10px;
     }
     .filter button {
-        height: 30px;
-        width: 60px;
+        height: 40px;
+        width: 70px;
         border-radius: 8px;
         outline: none;
         border: 0;
         cursor: pointer;
+        font-size: 0.6em;
     }
     @keyframes glare1 {
         0% {
@@ -190,9 +191,7 @@ h2 {
         font-size: 0.7em;
     }
     .filter button {
-        height: 35px;
-        width: 68px;
-        font-size: 0.55em;
+        width: 75px;
     }
 }
 
@@ -213,9 +212,9 @@ h2 {
         width: 150px;
     }
     .filter button {
-        height: 40px;
-        width: 80px;
-        font-size: 0.6em;
+        height: 45px;
+        width: 85px;
+        font-size: 0.65em;
     }
     .cart .inner div p { 
         font-size: 0.8em;
@@ -244,9 +243,9 @@ h2 {
         width: 300px;
     }
     .filter button {
-        height: 45px;
-        width: 90px;
-        font-size: 0.7em;
+        height: 50px;
+        width: 100px;
+        font-size: 0.8em;
     }
     @keyframes glare1 {
         0% {
@@ -317,7 +316,7 @@ h2 {
     .filter button {
         width: 140px;
         font-size: 0.9em;
-        height: 50px;
+        height: 60px;
     }
     @keyframes glare1 {
         0% {
