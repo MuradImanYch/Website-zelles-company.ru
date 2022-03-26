@@ -106,6 +106,7 @@ h2 {
 .cart .inner div div p img {
     width: 20px;
     margin: 0 2px;
+    height: 20px;
 }
 .cart .inner div div p:first-child {
     background: #272339;

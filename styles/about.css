@@ -144,6 +144,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 250px;
+		height: 250px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 120px 0 0 0;
@@ -159,6 +160,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 300px;
+		height: 300px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 150px 0 0 0;
@@ -180,6 +182,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 220px;
+		height: 220px;
 	}
 	.benefits .col:not(.benefits .col:first-child) {
 		margin: 10px 0 0 0;
@@ -227,8 +230,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 350px;
-	}
-	.howToWorkWithUs .inner img {
+		height: 350px;
 		margin: -70px 0 0 0;
 	}
 }
@@ -263,8 +265,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 480px;
-	}
-	.howToWorkWithUs .inner img {
+		height: 480px;
 		margin: -120px 0 0 0;
 	}
 }
@@ -281,12 +282,11 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 550px;
+		height: 550px;
+		margin: -200px 0 0 0;
 	}
 	.howToWorkWithUs .inner {
 		height: 350px;
-	}
-	.howToWorkWithUs .inner img {
-		margin: -200px 0 0 0;
 	}
 }
 
@@ -317,8 +317,7 @@
 	}
 	.howToWorkWithUs .inner img {
 		width: 700px;
-	}
-	.howToWorkWithUs .inner img {
+		height: 700px;
 		margin: -300px 0 0 0;
 	}
 }
