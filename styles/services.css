@@ -52,8 +52,9 @@ h2 {
     width: 100%;
     border: 1px solid #272339;
     border-radius: 15px;
-    min-height: 160px;
     padding: 20px 0 20px 25px;
+    display: flex;
+    flex-direction: column;
 }
 .cart:not(.cart:first-child) {
     margin: 25px 0 0 0;
@@ -70,9 +71,9 @@ h2 {
     justify-content: space-between;
 }
 .cart_inner_text{
-    min-height: 40px;
     color: rgba(255, 255, 255, 0.7);
     margin: 10px 0 0 0;
+    flex: 1 1 auto;
 } 
 .cart .inner div h3 {
     font-size: 1em;
@@ -229,9 +230,6 @@ h2 {
     #glare2 {
         top: 1100px;
     }
-    .cart {
-        min-height: 170px;
-    }
     .cart .inner div h3 {
         font-size: 1.3em;
     }
@@ -270,12 +268,8 @@ h2 {
 }
 
 @media (min-width: 540px) { /* >= 540px */
-    .wrap {
-        align-items: center;
-    }
     .cart {
         width: 350px;
-        min-height: 160px;
     }
     .cart .inner div h3 {
         font-size: 1.2em;
@@ -412,7 +406,6 @@ h2 {
     } 
     .cart {
         width: 380px;
-        height: 190px;
     }
     .cart:not(.cart:first-child) {
         margin: 25px 20px 0 0;
