@@ -8,11 +8,8 @@
     url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
     url('../assets/fonts/HelveticaNeueCyr-Bold.woff');
 }
-.header.services {
-    height: 100px;
-}
 .services {
-    margin: 0 0 0 0;
+    padding: 120px 0 0 0;
     position: relative;
 }
 #glare1, #glare2 {
@@ -481,6 +478,6 @@ h2 {
         top: 250px;
     }
     .services { 
-        margin: 170px 0 0 0;
+        padding: 200px 0 0 0;
     }
 }

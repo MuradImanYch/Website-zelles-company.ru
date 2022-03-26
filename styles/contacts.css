@@ -8,14 +8,11 @@
     url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
     url('../assets/fonts/HelveticaNeueCyr-Bold.woff');
 }
-.header.contacts{
-    height: 150px;
-}
 .conteiner_contacts  {
     max-width: 1000px;
     height: 600px;
     color: #fff;
-    margin: 0 auto;
+    margin: 170px auto;
 }
 .contacts_title {
     max-width: 460px;
@@ -162,6 +159,7 @@ color:#fff;
 @media (min-width: 1680px) {
     .conteiner_contacts  {
         min-width: 1600px;
-        margin-top: 170px;
+        padding: 170px 0 0 0;
+        margin: 0 auto;
     }
 }

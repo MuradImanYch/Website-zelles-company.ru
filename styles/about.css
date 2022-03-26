@@ -1,11 +1,11 @@
-.header.about {
-	height: 150px;
-}
 .block_about_info {
 	display: flex;
 }
 .benefits {
 	margin: 150px 0 0 0;
+}
+.about_content  {
+	padding: 120px 0 0 0;
 }
 .benefits .col:not(.benefits .col:first-child) {
 	margin: 100px 0 0 0;
@@ -123,9 +123,6 @@
 		height: 600px;
 		padding: 5px 0px;
 
-	}
-	.block_about_info {
-		padding: 0px 30px 20px 30px;
 	}
 }
 
@@ -276,9 +273,6 @@
     .about_content  {
         min-width: 1200px;
     }
-	.block_about_info {
-		margin: 170px 0 0 0;
-	}
 	.about_content_text {
 		padding: 0 350px 0 0;
 	}
@@ -299,6 +293,7 @@
 @media (min-width: 1680px) {
     .about_content  {
         min-width: 1600px;
+		padding: 170px 0 0 0;
     }
 	.about_content_text {
 		padding: 0 750px 0 0;

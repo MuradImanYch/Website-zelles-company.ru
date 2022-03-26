@@ -12,9 +12,6 @@
         width: 90%;
         margin: auto;
 }
-.header.pf {
-        height: 150px;
-}
 [data-color="white"] {
    color:rgba(255, 255, 255, 1)!important;
     text-decoration: underline #55E8E3;
@@ -26,6 +23,7 @@
         color: #fff;
         display: flex;
         justify-content: center;
+        padding: 120px 0 0 0;
 }
 .portfolio_content {
         margin: 0 auto;

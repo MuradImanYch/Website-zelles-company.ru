@@ -13,7 +13,6 @@
         url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
         url('../assets/fonts/HelveticaNeueCyr-Bold.woff');
 }
-
 #scrollbar {
     position: fixed;
     right: 0;
@@ -257,6 +256,7 @@ body {
 header {
     width: 100%;
     margin: 0 0 60px 0;
+    padding: 10px 0 0 0;
 }
 
 .header .container {
@@ -290,7 +290,6 @@ header .barsWrap {
 .header {
     position: relative;
     padding: 20px 0 0 0;
-    margin: 0 0 60px 0;
 }
 
 .header .animGlare {
@@ -403,6 +402,7 @@ header .barsWrap {
 
 section {
     padding: 50px 0 0 0;
+    margin: 60px 0 0 0;
 }
 
 .header section button {
@@ -1014,6 +1014,10 @@ footer .footer_img img {
 .nav_footer_icon {
     opacity: 1;
     padding: 0 15px;
+}
+footer #copyright {
+    height: 200px;
+    background: #000;
 }
 
 @media (min-width: 280px) {
@@ -1957,6 +1961,10 @@ footer .footer_img img {
     .nav_menu #icoWrap {
         width: 70px;
         margin: 0;
+    }
+    footer #copyright {
+        height: 80px;
+        background: #000;
     }
 }
 
