@@ -392,7 +392,6 @@ header .barsWrap {
 }
 
 .header section img {
-    width: 200px;
     transform: rotate(4deg);
     animation: headImg 5s infinite;
 }
@@ -593,6 +592,7 @@ section {
 
 .header .mobMenuWrap img {
     width: 25px;
+    height: 25px;
 }
 
 .header .mobMenuWrap .colWrap {
@@ -870,7 +870,7 @@ h2 span {
     outline: none;
     height: 40px;
     color: #a6a6a6;
-    padding: 0 0 0 10px;
+    padding: 8px 0 0 10px;
     letter-spacing: 1px;
     font-family: HelveticaNeueCyr;
 }
@@ -1042,10 +1042,6 @@ footer #copyright {
         width: 100px;
     }
 
-    .header section img {
-        width: 120px;
-    }
-
     .header section button {
         max-width: 250px;
         width: 100%;
@@ -1107,11 +1103,6 @@ footer #copyright {
         width: 120px;
     }
 
-    .header section img {
-        width: 140px;
-        height: 120px;
-    }
-
     .header .mobMenuWrap {
         width: 290px;
         padding: 20px;
@@ -1154,11 +1145,6 @@ footer #copyright {
 
     .header section h3 {
         width: 140px;
-    }
-
-    .header section img {
-        width: 180px;
-        height: 150px;
     }
 
     .header .mobMenuWrap {
@@ -1206,11 +1192,6 @@ footer #copyright {
         width: 150px;
     }
 
-    .header section img {
-        width: 200px;
-        height: 170px;
-    }
-    
     .header section img:nth-child(2) {
         right: 155px;
         top: 85px;
@@ -1260,11 +1241,6 @@ footer #copyright {
     .header section h3 {
         font-size: 0.8em;
         width: 200px;
-    }
-
-    .header section img {
-        width: 260px;
-        height: 210px;
     }
 
     .benefits .list {
@@ -1403,11 +1379,6 @@ footer #copyright {
         width: 240px;
     }
 
-    .header section img {
-        width: 400px;
-        height: 320px;
-    }
-
     .header .animGlare:nth-child(1) {
         box-shadow: 0px 0px 150px 190px #7665b7;
     }
@@ -1502,11 +1473,6 @@ footer #copyright {
 
     .header section h1 {
         font-size: 2.4em;
-    }
-
-    .header section img {
-        width: 440px;
-        height: 360px;
     }
 
     .header section img:nth-child(2) {
@@ -1688,10 +1654,10 @@ footer #copyright {
         width: 1000px;
     }
 
-    .header .animGlare {
+    /* .header .animGlare {
         width: 200px;
         height: 200px;
-    }
+    } */
 
     .header .animGlare:nth-child(1) {
         box-shadow: 0px 0px 200px 300px #7665b7;
