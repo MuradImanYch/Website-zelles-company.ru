@@ -1,13 +1,3 @@
-@font-face {
-        font-family: HelveticaNeueCyr;
-        src: url('../assets/fonts/helveticaneuecyr_thin.otf');
-}
-@font-face {
-        font-family: HelveticaNeueCyrBold;
-        src: url('../assets/fonts/HelveticaNeueCyr-Bold.eot'),
-        url('../assets/fonts/HelveticaNeueCyr-Bold.ttf'),
-        url('../assets/fonts/HelveticaNeueCyr-Bold.woff');
-}
 .container {
         width: 90%;
         margin: auto;
