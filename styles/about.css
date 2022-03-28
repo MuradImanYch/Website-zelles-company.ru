@@ -35,12 +35,6 @@
 	line-height: 120px;
 	color: #fff;
 }
-.about_content_text  {
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
 .about_content_text>p{
 	font-family: 'Helvetica Neue Cyr Thin',sans-serif;
 	font-style: normal;
@@ -48,11 +42,8 @@
 	font-size: 26px;
 	line-height: 30px;
 	color: #A6A6A6;
-	word-spacing:4px;
-}
-
-.about_content_text {
-	margin: 50px 0 0 0;
+	word-spacing: 4px;
+	padding: 45px 0 0 0;
 }
 
 .howToWorkWithUs {
@@ -100,29 +91,17 @@
         padding:5px 30px;
         max-width: 980px;
     }
-    .about_content_text {
-		justify-content: space-around;
-	}
 }
 
 @media (max-width:850px){
 	.about_content_text>p {
 		font-size: 18px;
-		margin: 20px 0 0 0;
 	}
 }
 
 @media (max-width:450px){
 	.about_content {
 		height: auto;
-	}
-	.about_content_text>p {
-		padding: 5px 0px;
-	}
-	.about_content_text {
-		height: 600px;
-		padding: 5px 0px;
-
 	}
 }
 
@@ -203,13 +182,6 @@
     .footer_img {
         margin: 40px 0 0 0;
     }
-	.about_content_text {
-		padding: 0 150px 0 0;
-		height: 400px;
-	}
-	.about_content_text p {
-		margin: 45px 0 0 0;
-	}
 	.howToWorkWithUs h2 {
 		width: 400px;
 	}
