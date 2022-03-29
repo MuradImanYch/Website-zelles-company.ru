@@ -1,3 +1,18 @@
+<?
+ini_set('display_errors', 'Off'); 
+
+if($_GET['variable'] != "jkfkdgf"){
+    exit();
+}
+
+$DataBase = new PDO('mysql:host=localhost;dbname=d39871_zelles;charset=utf8', 'd39871_zelles_us', 'chot44dhhkt3vccccd');
+
+$a = $DataBase->prepare("SELECT * FROM `orders`");
+$a->execute();
+$b = $a->fetchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,42 +60,16 @@
                                 <th>Описание</th>
                                 <th>Дата</th>
                             </tr>
-                            <tr>
-                                <td>Катя</td>
-                                <td>+74848484848</td>
-                                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum assumenda magnam deleniti!</td>
-                                <td>25.02.2022</td>
-                            </tr>
-                            <tr>
-                                <td>Дмитрий</td>
-                                <td>+99416161616</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ut, eius soluta omnis explicabo corporis amet magnam itaque provident nihil autem eligendi ipsum</td>
-                                <td>25.02.2022</td>
-                            </tr>
-                            <tr>
-                                <td>Murad</td>
-                                <td>+99416161616</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ut, eius soluta omnis ex eligendi ipsum</td>
-                                <td>25.02.2022</td>
-                            </tr>
-                            <tr>
-                                <td>Sebastian Andersson</td>
-                                <td>+99416161616</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ut, eius soluta omnis.</td>
-                                <td>25.02.2022</td>
-                            </tr>
-                            <tr>
-                                <td>Li</td>
-                                <td>+1889874577</td>
-                                <td>Lorem ipsum dolor sit amet.</td>
-                                <td>25.02.2022</td>
-                            </tr>
-                            <tr>
-                                <td>Liwewefwfwefwefewfw</td>
-                                <td>+1889874577</td>
-                                <td>Lorem ipsum ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sitLorem ipsum dolor sit ametLorem ipsum dolor sit amet.</td>
-                                <td>25.02.2022</td>
-                            </tr>
+                            <? 
+                            foreach ($b as $key => $value) {
+                                echo "<tr>";
+                                echo "<td>".$value['name']."</td>";
+                                echo "<td>".$value['number']."</td>";
+                                echo "<td>".$value['description']."</td>";
+                                echo "<td>".date('Y-m-d h:i:s',$value['time'])."</td>";
+                                echo "</tr>";
+                            }
+                            ?>
                         </table>
                     </div>
                 </div>
