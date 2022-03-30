@@ -47,7 +47,6 @@ $b = $a->fetchAll();
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                <div>nav bar</div>
             </div>
             <div class="table">
                 <div class="container">

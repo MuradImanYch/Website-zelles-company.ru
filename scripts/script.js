@@ -24,6 +24,37 @@ $(document).ready(() => {
         $(this).hide();
     });
 
+    // form sending
+    $('form').submit((e) => {
+        e.preventDefault();
+
+        $.ajax({
+            type: 'GET',
+            url: "order_form.php", 
+            cache: false,
+            beforeSend: function() {
+                $('.form input:nth-child(4)').prop('disabled', true);
+            },
+            success: function() {
+                $('.form input:not(.form input:nth-child(4))').trigger('reset');
+                $('.form input:nth-child(4)').prop('disabled', false);
+                alert('success');
+            }
+        });
+
+        /* $.ajax(
+            'order_form.php',
+            {
+                success: function(data) {
+                  alert('AJAX call was successful!');
+                  alert('Data from the server' + data);
+                },
+                error: function() {
+                  alert('There was some error performing the AJAX call!');
+                }
+             }
+          ); */
+    }); 
 });
 
 // <======= Scrollbar =======>
