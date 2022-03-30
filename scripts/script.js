@@ -26,20 +26,28 @@ $(document).ready(() => {
 
     // form sending
     $('form').submit((e) => {
+        console.log(e);
         e.preventDefault();
 
         $.ajax({
             type: 'POST',
-            url: "../order_form.php", 
+            url: "/order_form.php", 
             cache: false,
+            data: {
+                name: $('.form input:not(.form input:nth-child(3))')[0].value,
+                number: $('.form input:not(.form input:nth-child(3))')[1].value,
+                description: $('.form input:not(.form input:nth-child(1))')[1].value
+            },
             beforeSend: function() {
                 $('.form input:nth-child(4)').prop('disabled', true);
+            },
+            error: function(err) {
+                console.log(err);
             },
             success: function(response) {
                 $('.form input:not(.form input:nth-child(4))').trigger("reset");
                 $('.form input:nth-child(4)').prop('disabled', false);
-                alert('successsss');
-                alert(response);
+                console.log('success');
             }
         });
     }); 
