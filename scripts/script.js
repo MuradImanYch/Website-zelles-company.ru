@@ -30,7 +30,7 @@ $(document).ready(() => {
 
         $.ajax({
             type: 'POST',
-            url: "order_form.php", 
+            url: "../order_form.php", 
             cache: false,
             beforeSend: function() {
                 $('.form input:nth-child(4)').prop('disabled', true);
@@ -41,19 +41,6 @@ $(document).ready(() => {
                 alert('success');
             }
         });
-
-        /* $.ajax(
-            'order_form.php',
-            {
-                success: function(data) {
-                  alert('AJAX call was successful!');
-                  alert('Data from the server' + data);
-                },
-                error: function() {
-                  alert('There was some error performing the AJAX call!');
-                }
-             }
-          ); */
     }); 
 });
 
