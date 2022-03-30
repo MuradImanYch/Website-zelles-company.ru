@@ -29,7 +29,7 @@ $(document).ready(() => {
         e.preventDefault();
 
         $.ajax({
-            type: 'POST',
+            type: 'GET',
             url: "../order_form.php", 
             cache: false,
             beforeSend: function() {
