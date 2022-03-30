@@ -35,10 +35,11 @@ $(document).ready(() => {
             beforeSend: function() {
                 $('.form input:nth-child(4)').prop('disabled', true);
             },
-            success: function() {
-                $('.form input:not(.form input:nth-child(4))').trigger('reset');
+            success: function(response) {
+                $('.form input:not(.form input:nth-child(4))').trigger("reset");
                 $('.form input:nth-child(4)').prop('disabled', false);
-                alert('success');
+                alert('successsss');
+                alert(response);
             }
         });
     }); 
