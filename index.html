@@ -74,7 +74,7 @@
                                 </a>
                             </li>
                             <li>
-                                <button name="order_button" onclick="window.location.href='index.html'">Заказать звонок</button>
+                                <a href="#form"><button name="order_button">Заказать звонок</button></a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +91,7 @@
                         Сделаем сайт для вашей компании за 7 дней с высокой конверсией
                     </h3>
                     <div class="working_mode">
-                        <button>Заказать сайт</button>
+                        <a href="#form"><button name="order_button">Заказать звонок</button></a>
                         <div class="working_mode_inner">
                             <span><img alt="clock" id="working_mode_img" src="assets/ico/working_mode.svg"
                                     title="режим работы"></span>
@@ -207,7 +207,7 @@
             <div class="btnWrap"><button onclick="window.location.href='portfolio.html'">Загрузить ещё</button></div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
         <img id="footerGlare1" src="assets/img/ellipse1.webp" alt="glare1" class="animGlare">
         <img id="footerGlare2" src="assets/img/ellipse2.webp" alt="glare1" class="animGlare">
         <img id="footerGlare3" src="assets/img/ellipse3.webp" alt="glare1" class="animGlare">
@@ -217,9 +217,9 @@
                     приступить к разработке!
                 </span></h2>
             <form action="order_form.php" method="post">
-                <input type="text" placeholder="Ваше имя">
-                <input type="phone" placeholder="Ваш телефон">
-                <input type="text" placeholder="Краткое описание проекта">
+                <input class="input" type="text" placeholder="Ваше имя">
+                <input class="input" type="number" placeholder="Ваш телефон">
+                <input class="input" type="text" placeholder="Краткое описание проекта">
                 <input type="submit" value="Написать нам">
             </form>
         </div>
@@ -268,7 +268,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/script.js?4"></script>
+    <script src="scripts/script.js?5"></script>
 </body>
 
 </html>

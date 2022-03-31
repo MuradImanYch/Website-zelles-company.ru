@@ -26,8 +26,36 @@ $(document).ready(() => {
 
     // form sending
     $('form').submit((e) => {
-        console.log(e);
         e.preventDefault();
+
+        // validation
+        if($('.form input:not(.form input:nth-child(3))')[0].value.length < 1 || $('.form input:not(.form input:nth-child(3))')[0].value.length > 15) {
+            document.querySelector('.form input:not(.form input:nth-child(0))').classList.add('error');
+            document.querySelector('.form input:not(.form input:nth-child(0))').setAttribute('placeholder', 'Поле не должно быть пустым и перевышать 15 символов');
+            return false;
+        }
+        else {
+            document.querySelector('.form input:not(.form input:nth-child(0))').classList.remove('error');
+            document.querySelector('.form input:not(.form input:nth-child(0))').setAttribute('placeholder', 'Ваше имя');
+        }
+        if($('.form input:not(.form input:nth-child(3))')[1].value.length < 1 || $('.form input:not(.form input:nth-child(3))')[1].value.length > 15) {
+            document.querySelector('.form input:not(.form input:nth-child(1))').classList.add('error');
+            document.querySelector('.form input:not(.form input:nth-child(1))').setAttribute('placeholder', 'Поле не должно быть пустым и перевышать 15 символов');
+            return false;
+        }
+        else {
+            document.querySelector('.form input:not(.form input:nth-child(1))').classList.remove('error');
+            document.querySelector('.form input:not(.form input:nth-child(1))').setAttribute('placeholder', 'Ваш телефон');
+        }
+        if($('.form input:not(.form input:nth-child(1))')[1].value.length < 1 || $('.form input:not(.form input:nth-child(1))')[1].value.length > 120) {
+            $('.form input:not(.form input:nth-child(1))').eq(1).addClass('error');
+            $('.form input:not(.form input:nth-child(1))').eq(1).attr('placeholder', 'Поле не должно быть пустым и перевышать 120 символов');
+            return false;
+        }
+        else {
+            $('.form input:not(.form input:nth-child(1))').eq(1).removeClass('error');
+            $('.form input:not(.form input:nth-child(1))').eq(1).attr('placeholder', 'Краткое описание проекта');
+        }
 
         $.ajax({
             type: 'POST',
@@ -39,17 +67,17 @@ $(document).ready(() => {
                 description: $('.form input:not(.form input:nth-child(1))')[1].value
             },
             beforeSend: function() {
+                $(".form input:not(.form input:nth-child(4))").val('');
                 $('.form input:nth-child(4)').prop('disabled', true);
             },
             error: function(err) {
                 console.log(err);
             },
-            success: function(response) {
-                $('.form input:not(.form input:nth-child(4))').trigger("reset");
+            success: function() {
                 $('.form input:nth-child(4)').prop('disabled', false);
-                console.log('success');
             }
         });
+        $('input[type="submit"]').val('Отправлено').css({background: '#00a141'});
     }); 
 });
 

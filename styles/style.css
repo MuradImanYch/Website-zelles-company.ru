@@ -1,6 +1,9 @@
 ::-webkit-scrollbar {
     display: none
 }
+html {
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: HelveticaNeueCyr;
     font-display: swap;
@@ -862,7 +865,12 @@ h2 span {
     display: flex;
     flex-direction: column;
 }
-
+.form form .error {
+    border-bottom: 1px solid #ff3e3e;
+}
+.form form .error::placeholder {
+    color: #ff3e3e;
+}
 .form form input {
     background: transparent;
     border: 0;
@@ -874,7 +882,9 @@ h2 span {
     letter-spacing: 1px;
     font-family: HelveticaNeueCyr;
 }
-
+form input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .form form input:not(.form form input:first-child) {
     margin: 50px 0 0 0;
 }

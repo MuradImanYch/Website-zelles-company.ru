@@ -16,10 +16,4 @@ $(document).ready(() => {
             $('nav').animate({left: '-100%'})
         }
     });
-  
-    btn_show.on('click',function(e) { // show more | portfolio.html
-        item_show.css('display','block');
-        $(this).hide();
-    });
-
 });

@@ -1,5 +1,3 @@
-
-
 $(document).ready(() => {
     // category filter
     $('.filter button:nth-child(1)').click(() => {
